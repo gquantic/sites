@@ -1,0 +1,14 @@
+Sitemap: https://www.start.gg/sitemap.xml
+
+User-agent: *
+Disallow: /admin/
+Disallow: /developer/
+Disallow: */embed
+Disallow: /tournament/*/manage_registration
+Disallow: /tournament/*/manage
+Disallow: /tournament/*/dashboard
+Disallow: /login
+Disallow: /profile/
+Disallow: /account_accept/
+Disallow: /dataforms/
+Disallow: /create/

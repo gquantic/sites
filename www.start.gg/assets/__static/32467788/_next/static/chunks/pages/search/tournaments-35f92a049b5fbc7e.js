@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7844],{99096:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/search/tournaments",function(){return _(67685)}])}},function(n){n.O(0,[7844],(function(){n.E(9135),n.E(5720)}),5);n.O(0,[1253,9729,4275,705,4594,9741,3375,764,5592,1909,2110,9135,5499,4762,7958,9911,2094,1435,7533,3880,2968,7145,9774,2888,179],(function(){return u=99096,n(n.s=u);var u}));var u=n.O();_N_E=u}]);
+//# sourceMappingURL=tournaments-35f92a049b5fbc7e.js.map
