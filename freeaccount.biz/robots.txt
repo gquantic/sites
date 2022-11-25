@@ -1,0 +1,11 @@
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /go/
+Disallow: /reg/
+Disallow: /smart/
+
+User-agent: *
+Disallow: /admin/
+Disallow: /go/
+Disallow: /reg/
+Disallow: /smart/
