@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /F
+Disallow: /F/
+Disallow: /company
+Disallow: /pay
+Sitemap: https://www.myget.org/sitemap.xml
+
+User-agent: nsa
+Disallow: /
