@@ -1,0 +1,4 @@
+User-agent: * 
+Allow: / 
+Host: https://webstore-usa.net/ 
+Sitemap: https://webstore-usa.net/sitemap.xml

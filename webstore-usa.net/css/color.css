@@ -1,0 +1,99 @@
+:root {
+	--btn: #00c4ec;
+	--btntxt: #fff;
+	--btnshadow: rgba(31, 189, 243, .3);
+	--bg: rgba(0, 73, 129, .9);
+	--bg2: rgba(27, 24, 81, .9);
+	--table: rgb(20, 20, 61);
+	--table2: rgb(17, 14, 51);
+}
+body{
+	background-color: var(--bg);
+	color: #fff;
+}
+span{color: var(--btn)}
+a{color: var(--btn)}
+a:active{color: var(--btn)}
+h2, h3{color: var(--btn)}
+footer{background-color: var(--bg)}
+header{
+	position: fixed;
+	background-color: var(--bg2);
+	box-shadow: 0 0 15px 15px rgba(50, 50, 50, .8);
+}
+.menu_btn:hover{background-color: var(--btn)}
+.menu_btn a{color: #fff}
+.banner_text{background-color: var(--bg)}
+.banner_text > div > a{
+	border: 1px solid #333;
+	color: #fff;
+	background-color: rgba(31, 189, 243, .7);
+	box-shadow: 0 0 5px 5px rgba(31, 189, 243, .2);
+}
+.banner_text > div > a:hover{
+	background-color: rgba(31, 189, 243, .9);
+	box-shadow: 0 0 0 0 #fff;
+	border-color: #fff;
+	color: #fff;
+}
+.container{box-shadow: 0 0 1rem 0 var(--bg2)}
+.container:before{
+	content: "";
+	position: absolute;
+	background-color: var(--bg2);
+	filter: blur(10px);
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 50px var(--bg2);
+	border-radius: 20px;
+}
+.btn a{
+	color: var(--btntxt);
+	background-color: var(--btn);
+	border-radius: 10px;
+	box-shadow: 0 0 5px 5px var(--btnshadow);
+}
+.btn a:hover{
+	color: var(--btn);
+	background-color: var(--btntxt);
+	border-color: var(--btntxt)
+}
+.topcasino > div{background-color: rgba(150, 150, 160, .2)}
+.table_head div{border-bottom: 1px solid var(--btn)}
+.col-6{border-left: 1px solid var(--btn)}
+.col-6:last-child{border-right: 1px solid var(--btn)}
+.col-7{border-left: 1px solid var(--btn)}
+.col-7:last-child{border-right: 1px solid var(--btn)}
+#tgame{background: rgba(0, 0, 0, 0.5)}
+.okno{
+	background-image: url("../img/jackpot.png");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, .8);
+}
+.popup_btn{
+	background-color: rgba(20, 20, 20, .8);
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.popup_btn{color: #aaa}
+.popup_btn > a:hover{color: #fff}
+.faq-row{background-color: var(--btnshadow)}
+.faq-btn:before,
+.faq-btn:after{background-color: #fff}
+.faq-info{color: #fff}
+.up{background-color: #000}
+.up > span{background-color: #fff}
+.up:before, .up:after{background-color: #fff}
+.tgame-link{color: var(--btn);text-shadow: 0 0 5px var(--btn)}
+.softprov{
+	background-color: rgba(180, 180, 180, .3);
+	box-shadow: 0 0 2px 2px #777
+}
+@media screen and (max-width: 1200px){
+	.menu_case{background-color: var(--bg2)}
+	.menu_btn{background-color: rgba(100, 100, 100, .5)}
+	.burger > span, .burger::after, .burger::before{background-color: #fff;}

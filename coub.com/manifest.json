@@ -1,0 +1,7 @@
+{
+  "name": "Coub Push Notification",
+  "short_name": "Coub Push",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "103953800507"
+}

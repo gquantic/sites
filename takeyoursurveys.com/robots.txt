@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+
+Sitemap: https://takeyoursurveys.com/sitemap.xml
+Sitemap: https://takeyoursurveys.com/sitemap.rss
+Sitemap: https://takeyoursurveys.com/sitemap.xml
