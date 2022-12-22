@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: rgb(20, 20, 61);
+    color: #fff;
+    padding: 15px;
+}
+
+header a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header .inner {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    color: #fff;
+    font-family: Arial;
+    background: rgb(18, 18, 54);
+}
+
+.btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding: 11px 24px;
+    -webkit-transition: .12s ease-in-out;
+    -o-transition: .12s ease-in-out;
+    transition: .12s ease-in-out;
+    border-radius: 12px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#ffaa04),to(#ffbc04));
+    background: -o-linear-gradient(top,#ffaa04 0,#ffbc04 100%);
+    background: linear-gradient(180deg,#ffaa04 0,#ffbc04 100%);
+    -webkit-box-shadow: 0 4px 60px rgb(253 193 0 / 28%), 0 2px 0 #e67c00, inset 0 -4px 18px 4px rgb(253 194 0 / 60%);
+    box-shadow: 0 4px 60px rgb(253 193 0 / 28%), 0 2px 0 #e67c00, inset 0 -4px 18px 4px rgb(253 194 0 / 60%);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:active {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.vouchers {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.voucher {
+    width: 31.987%;
+    height: auto;
+    background: rgb(22, 22, 61);
+    border: 2px solid rgb(38, 38, 110);
+    padding: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.voucher .title {
+    font-weight: bold;
+}
+
+.voucher a {
+    color: #ff9900;
+}
+
+.top-casino {
+    padding: 15px;
+    background: #16163DFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.top-casino {
+    margin-bottom: 15px;
+}
+
+.top-casino .num {
+    font-size: 32px;
+    color: #ff9900;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.top-casino .votes {
+    width: 100px;
+}
+
+.top-casino .votes .stars {
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.top-casino .votes .votes-count {
+    color: rgba(250,250,250,.3);
+    font-size: 12px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal .modal-cover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(22, 22, 61, .8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-header {
+    font-weight: bolder;
+    font-size: 23px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header .close-btn {
+    width: 65px;
+    font-size: 15px;
+    font-weight: lighter;
+    background: rgba(0,0,0,0);
+    color: #ff9900;
+    border: none;
+    font-weight: bolder;
+}
+
+.modal .modal-content {
+    width: 400px;
+    height: auto;
+    background: rgba(22, 22, 61, .2);
+    border-radius: 7px;
+    padding: 25px 25px;
+    backdrop-filter: blur(15px);
+}
+
+.modal button {
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input {
+    background: rgba(0,0,0,0);
+    border: 2px solid rgba(250,250,250,.2);
+    height: 35px;
+    border-radius: 8px;
+    color: #fff;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: .15s ease;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #ff9900;
+}
+
+footer {
+    width: 100%;
+}
