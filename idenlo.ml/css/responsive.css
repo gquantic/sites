@@ -1,0 +1,78 @@
+@media (max-width: 1050px) {
+    header .inner {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .voucher {
+        width: 48%;
+    }
+}
+
+@media (max-width: 835px) {
+    header .inner {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .voucher {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    header .inner {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .voucher {
+        width: 47%;
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .inner {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .voucher {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    header img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 395px) {
+    header .inner {
+        width: 95%;
+    }
+
+    header a:last-child {
+        display: none;
+    }
+
+    a.btn {
+        padding: 11px 15px;
+        margin-right: 0px;
+    }
+}

@@ -80,6 +80,7 @@ body {
 
 .voucher {
     width: 31.987%;
+    min-width: 300px;
     height: auto;
     background: rgb(22, 22, 61);
     border: 2px solid rgb(38, 38, 110);
