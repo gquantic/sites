@@ -18,8 +18,7 @@
     <header class="header">
         <div class="inner">
             <div>
-                <a href="">Vouchers</a>
-                <a href="">Free spins</a>
+                <b>Get vouchers daily</b>
             </div>
             <div>
                 <a class="btn" href="void:modalOpen()" onclick="modalOpen()">Get more vouchers daily</a>
@@ -29,6 +28,15 @@
         </div>
     </header>
     <div class="container">
+        <h2 style="text-align: center;margin-bottom: 0;">NEW VOUCHERS IN</h2>
+        <div class="timer">
+            <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+            </div>
+        </div>
         <h2>Vouchers</h2>
         <div class="vouchers">
             <div class="voucher">
@@ -95,18 +103,6 @@
                 <div class="votes-count">470 votes</div>
             </div>
         </div>
-        <div class="top-casino">
-            <div class="d-flex items-center">
-                <div class="num">#1</div>
-                <a href="" style="text-decoration: underline;color:#fff;">
-                    <h3>azimut777.net</h3>
-                </a>
-            </div>
-            <div class="votes">
-                <div class="stars">4.4</div>
-                <div class="votes-count">692 votes</div>
-            </div>
-        </div>
     </div>
 
     <div class="modal" id="modal">
@@ -150,6 +146,56 @@
         function modalClose() {
             modalObject.classList.remove('open');
         }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // конечная дата, например 1 июля 2021
+            var deadline = new Date();
+            deadline.setUTCHours(23,59,59,999);
+
+            // const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 01);
+
+            // id таймера
+            let timerId = null;
+
+            // склонение числительных
+            function declensionNum(num, words) {
+                return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+            }
+
+            // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+            function countdownTimer() {
+                const diff = deadline - new Date();
+                if (diff <= 0) {
+                    clearInterval(timerId);
+                }
+                const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+                const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+                const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+                const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+                $days.textContent = days < 10 ? '0' + days : days;
+                $hours.textContent = hours < 10 ? '0' + hours : hours;
+                $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+                $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+                $days.dataset.title = declensionNum(days, ['days', 'days', 'day']);
+                $hours.dataset.title = declensionNum(hours, ['hours', 'hours', 'hour']);
+                $minutes.dataset.title = declensionNum(minutes, ['minutes', 'minutes', 'minute']);
+                $seconds.dataset.title = declensionNum(seconds, ['seconds', 'seconds', 'second']);
+            }
+
+            // получаем элементы, содержащие компоненты даты
+            const $days = document.querySelector('.timer__days');
+            const $hours = document.querySelector('.timer__hours');
+            const $minutes = document.querySelector('.timer__minutes');
+            const $seconds = document.querySelector('.timer__seconds');
+
+            // вызываем функцию countdownTimer
+            countdownTimer();
+
+            // вызываем функцию countdownTimer каждую секунду
+            timerId = setInterval(countdownTimer, 1000);
+        });
     </script>
 </body>
 </html>

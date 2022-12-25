@@ -87,6 +87,31 @@ body {
     padding: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
+    animation: voucher  2s infinite ease-in-out;
+    transition: .3s ease;
+}
+
+.voucher:hover {
+    background: linear-gradient(to bottom, #fdc241, #e0aa35) !important;
+    animation: none;
+}
+.voucher:hover * {
+    color: #000;
+}
+
+@keyframes voucher {
+    from {
+        background: rgb(22, 22, 61);
+        border: 2px solid rgb(38, 38, 110);
+    }
+    50% {
+        background: rgb(22, 22, 61, .2);
+        border: 2px solid rgba(245, 180, 39, .6);
+    }
+    to {
+        background: rgb(22, 22, 61);
+        border: 2px solid rgb(38, 38, 110);
+    }
 }
 
 .voucher .title {
@@ -226,4 +251,36 @@ input:focus {
 
 footer {
     width: 100%;
+}
+
+.timer {
+    width: fit-content;
+    margin: 0 auto;
+}
+.timer__items {
+    display: flex;
+    font-size: 48px;
+    color: #fff;
+}
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
 }
